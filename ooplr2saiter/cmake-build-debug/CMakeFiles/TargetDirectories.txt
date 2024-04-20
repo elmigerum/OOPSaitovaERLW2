@@ -1,0 +1,3 @@
+/Users/elmirasaitova/Desktop/ooplr2saiter/cmake-build-debug/CMakeFiles/ooplr2saiter.dir
+/Users/elmirasaitova/Desktop/ooplr2saiter/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/elmirasaitova/Desktop/ooplr2saiter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
