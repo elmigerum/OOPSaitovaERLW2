@@ -63,6 +63,7 @@ public:
     }
     void changeColor(int newColor) {
         color = newColor;
+        printf("Сработал метод changeColor: %d\n", color);
     }
 };
 
@@ -157,6 +158,7 @@ int main() {
         printf("m3 = (%d, %d)\n", m3.x, m3.y);
     }
 
+    printf("\n\n");
 
     /// динамическое создание и удвление
     Point *m = new Point;
@@ -179,17 +181,25 @@ int main() {
     delete m2;
     delete m3;
 
+    printf("\n\n");
+
     /// coloredpoint
     ColoredPoint *cp1 = new ColoredPoint;
     ColoredPoint *cp3 = new ColoredPoint (1,20,30);
     ColoredPoint *cp2 = new ColoredPoint(*cp1);
-    printf("Colored point *cp = (%d, %d, %d)\n", cp3->x, cp3->y, cp3->color);
     printf("Colored point *cp1 = (%d, %d, %d)\n", cp1->x, cp1->y, cp1->color);
     printf("Colored point *cp2 = (%d, %d, %d)\n", cp2->x, cp2->y, cp2->color);
+    printf("Colored point *cp = (%d, %d, %d)\n", cp3->x, cp3->y, cp3->color);
+
+    cp1->changeColor(12);
+    cp2->changeColor(1);
+    cp3->changeColor(10);
+
     delete cp3;
     delete cp1;
     delete cp2;
 
+    printf("\n\n");
 
     /// triangle
     Triangle *t = new Triangle;
@@ -201,8 +211,10 @@ int main() {
     delete t;
     delete t2;
     delete t1;
-   /// circle
 
+    printf("\n\n");
+
+   /// circle
     Circle c1;
     printf("Circle c1 = ( %d, %d)\n", c1.O.x, c1.O.y);
     Circle c2(15, 20);
